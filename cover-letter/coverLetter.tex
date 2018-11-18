@@ -1,0 +1,145 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv} 
+% possible options include font size ('10pt', '11pt' and '12pt'), 
+% paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper')
+% font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            
+% style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}        
+%\nopagenumbers{}                                 
+
+% character encoding
+\usepackage[utf8]{inputenc}                       
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                
+% if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           
+% for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{ragged2e} %to justify
+
+% personal data
+\name{Jos\'e Alonso}{Sol\'is-Lemus}
+%\title{Resumé title}                               
+% optional, remove / comment the line if not wanted
+\address{4, Edward Dodd Court, Chart Street}{N1 6DQ, London}{}
+\phone[mobile]{+44~(0)~7838~189458}
+%\phone[fixed]{+2~(345)~678~901}
+\email{jose.solis-lemus.2@city.ac.uk}
+\homepage{alonsojasl.github.io} 
+%\extrainfo{Github: alonsoJASL}
+%\photo[64pt][0.4pt]{picture} 
+%\quote{Some quote
+
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+% university name:
+\newcommand{\university}{Imperial College London}
+\newcommand{\department}{Department of Computing, Faculty of Engineering}
+\newcommand{\position}{Research Assistant/Associate in Biomedical Image Analysis}
+\newcommand{\responsible}{Professor Daniel Rueckert}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%----- letter  ---------------------------------------------------------
+% recipient data
+\recipient{Chair, Search Committee for \position}
+{\responsible\\
+  \department{} \\
+  \university{}\\
+}
+\date{\today}
+\opening{Dear Search Committee Members,}
+\closing{Yours faithfully,}
+\enclosure[\textbf{Attached}]{curriculum vit\ae, research
+  statement. \\ 
+\textbf{Upon request}: diversity statement, transcripts.}          % use an optional
+                                % argument to use a string other than
+                                % "Enclosure", or redefine \enclname
+\makelettertitle
+
+\justify
+
+I am writing to apply for the tenure-track position in the rank of
+Assistant Professor in the \department{}. I did my \textbf{PhD in
+  Statistics at the University of
+  Wisconsin-Madison under the supervision of professor C\'ecile
+  An\'e}, after which I was a postdoctoral researcher working with
+professor Bret Larget. Currently, \textbf{I am a postdoctoral
+  researcher at Emory University} working with professor Michael
+Epstein, Director of the Center for Computational and Quantitative
+Genetics.
+
+\textbf{My research balances translational medicine, statistical theory
+  and computational tractability.} From chemical reaction network
+models to study viral dynamics, to coalescent models to understand
+evolution and notions of Fr\'echet means and variances in tree space,
+my research connects graph theory with statistical modeling to
+understand biological phenomena.  Specifically, I have published in
+\textit{PLoS Genetics} one of the most widely used models and software
+to reconstruct a phylogenetic network from a sample of gene trees. My
+work overcame several challenges related to model identifiability, and
+scalability to big genomic datasets. I have imparted several tutorials
+on my open-source software, now widely used by biologists worldwide.
+
+\textbf{My research is highly interdisciplinary.}  Currently, I am
+working with professor Samuel Brown (Georgia Tech) in the development
+of mathematical and statistical models to understand the microbial
+dynamics of lung microbiome in patients with cystic fibrosis.
+Furthermore, I am working with professor Timothy Read (Emory U.) to
+study the evolution of toxicity in \textit{Staphylococcus aureus} and
+professor Daniel Pimentel-Alarc\'on (GSU) to develop convolutional
+neural networks to study the predictive power of genomic data in
+personalized disease risk. Finally, in a pending NIH grant, I am
+collaborating with professor Michael Epstein (Emory U.) in the
+development of new statistical theory in post selection inference for
+high-dimensional sparse regression models for GWAS.
+
+My teaching experience is very diverse, from undergraduate-level
+introductory courses to graduate-level lectures in both Statistics and
+Mathematics. In addition, \textbf{I have won the College of Letters
+  and Science Teaching Award,} and I have mentored several
+undergraduate students, many of which have successfully transitioned
+to graduate school, and one which resulted in a published article in
+the renowned journal \textit{Systematic Biology}.
+
+\textbf{Given my innovative research in statistical methods with solid
+  theoretical guarantees, efficient computational implementations, and
+  applications to human disease}, I would be an excellent fit to
+the \department{}, considering their interest in fundamental
+contributions to theory and algorithms for data science.
+% My research on statistical theory and emphasis on
+% scalable software in machine learning will bond well in the
+% \department{} given its interest in fundamental contributions to
+% theory and algorithms for data science. 
+My experience in teaching and
+mentoring has roots on a deep commitment to prepare future
+researchers, principles shared by the values of teaching excellence at
+\university{}.
+
+\makeletterclosing
+
+\end{document}
+%% end of file `template.tex'.
